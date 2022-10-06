@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="960,1223" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uaa="clr-namespace:UiPath.AmazonWebServices.Activities;assembly=UiPath.AmazonWebServices.Activities" xmlns:uaasb="clr-namespace:UiPath.AmazonWebServices.Activities.S3.Buckets;assembly=UiPath.AmazonWebServices.Activities" xmlns:uaaso="clr-namespace:UiPath.AmazonWebServices.Activities.S3.Objects;assembly=UiPath.AmazonWebServices.Activities" xmlns:uac="clr-namespace:UiPath.AmazonWebServices.Core;assembly=UiPath.AmazonWebServices" xmlns:uam="clr-namespace:UiPath.AmazonWebServices.Models;assembly=UiPath.AmazonWebServices" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="37">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.AmazonWebServices.Core</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.AmazonWebServices.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.AmazonWebServices.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.AmazonWebServices.Activities.S3.Objects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.AmazonWebServices.Activities.S3.Buckets</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.AmazonWebServices.Activities.IAM.User</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.AmazonWebServices</AssemblyReference>
+      <AssemblyReference>UiPath.AmazonWebServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="554,1158" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uaa:AWSScope IAMRole="{x:Null}" AccessKeyId="Your Access Key ID" DisplayName="Amazon Web Services Scope" sap:VirtualizedContainerService.HintSize="512,1066" sap2010:WorkflowViewState.IdRef="AWSScope_1" Region="Your Bucket Region" SecretAccessKey="[new System.Net.NetworkCredential(&quot;&quot;,&quot;Your Secret Access Key&quot;).SecurePassword]">
+      <uaa:AWSScope.Body>
+        <ActivityAction x:TypeArguments="uac:AWSCmd">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="uac:AWSCmd" Name="AmazonWebServicesScopePropertyTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,980" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="variable1" />
+              <Variable x:TypeArguments="uam:AWSS3Bucket" Name="bucket" />
+              <Variable x:TypeArguments="uam:AWSS3BucketDetails" Name="bucketDetails" />
+              <Variable x:TypeArguments="uam:AWSS3Object" Name="obj" />
+              <Variable x:TypeArguments="x:String" Name="bucketPolicy" />
+              <Variable x:TypeArguments="uam:AWSS3Object" Name="objDownload" />
+              <Variable x:TypeArguments="x:String" Name="NewUseraccessID" />
+              <Variable x:TypeArguments="x:String" Name="newUserSecretAccessKey" />
+              <Variable x:TypeArguments="uam:AWSIAMUser" Name="newUser" />
+              <Variable x:TypeArguments="x:String" Name="path" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uaasb:AWSGetBucket Bucket="[bucket]" BucketDetails="[bucketDetails]" BucketName="kunalrpabucket" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AWSGetBucket_1" IncludeDetails="True" />
+            <uaasb:AWSGetBucketPolicy Bucket="[bucket]" BucketPolicy="[bucketPolicy]" DisplayName="Get Bucket Policy" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AWSGetBucketPolicy_1" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[bucketPolicy]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[bucketDetails]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,192" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uaasb:AWSConfigurePublicAccessBucket BlockPublicAcls="True" BlockPublicPolicy="True" Bucket="[bucket]" DisplayName="Configure Public Access to Bucket" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="AWSConfigurePublicAccessBucket_1" IgnorePublicAcls="True" RestrictPublicBuckets="True" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uaaso:AWSGetObject Bucket="[bucket]" DisplayName="Get Object" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AWSGetObject_1" IncludeVersions="False" Object="[objDownload]" ObjectKeyName="KunalSharmaRPADeveloperV2.pdf" />
+            <uaaso:AWSDownloadSingleObject File="{x:Null}" FileName="{x:Null}" Folder="{x:Null}" ObjectVersionID="{x:Null}" Timeout="{x:Null}" CreateSubfolderStructure="False" DisplayName="Download Object to File" FilePath="[path]" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AWSDownloadSingleObject_1" Object="[objDownload]" Overwrite="True" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="436,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[path]" />
+            <uaaso:AWSUploadSingleObject ContentType="{x:Null}" EncryptionKey="{x:Null}" FileResourceToUpload="{x:Null}" Object="{x:Null}" Permissions="{x:Null}" Tags="{x:Null}" Timeout="{x:Null}" Bucket="[bucket]" DisplayName="Upload Object from File" Encryption="None" FileToUpload="E:\UiPathChallenge\KunalSharmaRPADeveloperV2.pdf" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AWSUploadSingleObject_2" ObjectKeyName="KunalSharmaRPADeveloperV2.pdf" StorageClass="Standard" />
+          </Sequence>
+        </ActivityAction>
+      </uaa:AWSScope.Body>
+    </uaa:AWSScope>
+  </Sequence>
+</Activity>
